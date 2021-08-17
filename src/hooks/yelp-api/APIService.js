@@ -34,7 +34,7 @@ export default class APIService {
 
     static SaveFavoris(body) {
 
-        return fetch('http://127.0.0.1:8000/api/create-favourites/', {
+        return fetch('https://hairbypris.herokuapp.com/api/create-favourites/', {
             'method':'POST',
             headers: {
                 'Content-Type':'application/json',
@@ -48,7 +48,7 @@ export default class APIService {
 
     static DeleteFavourite(id, token) {
 
-        return fetch(`http://127.0.0.1:8000/api/favourites-delete/${id}`, {
+        return fetch(`https://hairbypris.herokuapp.com/api/favourites-delete/${id}`, {
             'method':'DELETE',
             headers: {
                 'Content-Type':'application/json',

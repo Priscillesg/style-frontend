@@ -25,7 +25,7 @@ const BusinessDetails = () => {
         // const abortController = new AbortController();
         // const signal = abortController.signal
 
-        fetch(`http://127.0.0.1:8000/api_list/${business_id}`, {
+        fetch(`https://hairbypris.herokuapp.com/api_list/${business_id}`, {
             'method':'GET',
             headers: {
               'Content-Type':'application/json',
@@ -65,7 +65,7 @@ const BusinessDetails = () => {
         const abortController = new window.AbortController();
         const signal = abortController.signal
 
-        fetch(`http://127.0.0.1:8000/api_list/${business_id}/reviews`, {
+        fetch(`https://hairbypris.herokuapp.com/api_list/${business_id}/reviews`, {
             'method':'GET',
             headers: {
               'Content-Type':'application/json',

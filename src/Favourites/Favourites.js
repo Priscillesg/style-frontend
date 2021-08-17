@@ -13,7 +13,7 @@ const FavouritesList = () => {
     const [token] = useCookies(['mytoken'])
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/favoris/', {
+        fetch('https://hairbypris.herokuapp.com/api/favoris/', {
             'method':'GET',
             headers: {
             'Content-Type':'application/json',
