@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import APIService from '../hooks/yelp-api/APIService';
 import {useCookies} from 'react-cookie'
-import {useHistory} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import './Login.css';
 import TopNav from '../LandingPage/TopNav/TopNav';
 import BottomNav from '../LandingPage/BottomNav/BottomNav'
@@ -52,7 +52,7 @@ const Login = () => {
                     <input type="password" className="login-input" id="inputPassword" value = {password} onChange = {e => setPassword(e.target.value)} placeholder="Enter your password" required/>
                 </div> 
                 
-            {isLogin ?  <button className="btn primary"  onClick = {loginBtn}>Login</button>
+            {isLogin ?  <button className="btn primary"  onClick = {loginBtn}><Link to='/'>Login</Link></button>
             :  <button className="btn primary" onClick = {RegisterBtn} >Register</button>
             }
 
